@@ -12,11 +12,6 @@ function circleRadius(outputKbpd: number): number {
   return Math.round(Math.max(3, Math.sqrt(outputKbpd) * 0.8));
 }
 
-const PRODUCT_LABELS: Record<Product, string> = {
-  gasoline: 'Gasoline output (est. kb/d)',
-  diesel:   'Diesel output (est. kb/d)',
-};
-
 const PRODUCT_YIELDS: Record<Product, string> = {
   gasoline: 'Americas ~45%, Europe ~22%, Asia ~28%',
   diesel:   'Americas ~27%, Europe ~43%, Asia ~36%',
